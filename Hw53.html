@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style Bootstrap.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .tasks{
+            height: 100%;
+        }
+        .task{
+            margin-top: 20px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="tasks">
+        <div class="task">
+            <h1>Checkbox</h1>
+            <div class="form-check">
+                <input type="checkbox" class="from-check-input" id="1a" />
+                <label for="1a" class="form-check-label"></label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="1b" disabled />
+                <label for="1b" class="form-check-label"></label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="1c"/>
+                <label for="1c" class="form-check-label">Checkbox with label</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="1d" disabled/>
+                <label for="1d" class="form-check-label">Checkbox with label disabled</label>
+            </div>
+        </div>
+        <div class="task">
+            <h1>Radio</h1>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="2a" />
+                <label for="2a" class="form-check-label"></label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="2b" disabled />
+                <label for="2b" class="form-check-label"></label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="2c" />
+                <label for="2c" class="form-check-label">Radio with label</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="2d" disabled />
+                <label for="2d" class="form-check-label">Radio with label disabled</label>
+            </div>
+        </div>
+        <div class="task">
+            <h1>Switch</h1>
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" id="3a" role="switch" />
+                <label for="3a" class="form-check-label"></label>
+            </div>
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" id="3b" role="switch" disabled />
+                <label for="3b" class="form-check-label"></label>
+            </div>            
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" id="3c" role="switch" />
+                <label for="3c" class="form-check-label">Switch with label</label>
+            </div>            
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" id="3d" role="switch" disabled />
+                <label for="3d" class="form-check-label">Switch with label disabled</label>
+            </div>
+        </div>
+        <div class="task">
+            <h1>Form</h1>
+            <form class="needs-validation" novalidate>
+                <div>
+                    <label for="4a" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="4a" required>
+                    <span class="valid-feedback">What a beautiful name!</span>
+                    <span class="invalid-feedback">Show your first name.</span>
+                </div>
+                <div>
+                    <label for="4b" class="form-label">Second name</label>
+                    <input type="text" class="form-control" id="4b" required>
+                    <span class="valid-feedback">Good surname!</span>
+                    <span class="invalid-feedback">Show your second name.</span>
+                </div>
+                <div>
+                    <label for="4c" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="4c" required>
+                    <span class="valid-feedback">Good!</span>
+                    <span class="invalid-feedback">Show your email.</span>
+                </div>
+                <div>
+                    <label for="4d" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" id="4d" required>
+                    <span class="valid-feedback">Good!</span>
+                    <span class="invalid-feedback">Show your phone number.</span>
+                </div>
+                <div>
+                    <label for="4e" class="form-label">Street address</label>
+                    <input type="email" class="form-control" id="4e" required>
+                    <span class="valid-feedback">Good!</span>
+                    <span class="invalid-feedback">Show your street address.</span>
+                </div>
+                <div>
+                    <label for="4f" class="form-label">Apt #</label>
+                    <input type="email" class="form-control" id="4f" required>
+                    <span class="valid-feedback">Good!</span>
+                    <span class="invalid-feedback">Idk what is this but you have to show this.</span>
+                </div>
+                <div>
+                    <label for="4g" class="form-label">City</label>
+                    <input type="email" class="form-control" id="4g" required>
+                    <span class="valid-feedback">Good!</span>
+                    <span class="invalid-feedback">Show your city.</span>
+                </div>
+                <div>
+                    <label for="4h" class="form-label">State</label>
+                    <input type="number" class="form-control" id="4h" required>
+                    <span class="valid-feedback">Good!</span>
+                    <span class="invalid-feedback">Show your state.</span>
+                </div>
+                <div>
+                    <label for="4i" class="form-label">Zip Code</label>
+                    <input type="email" class="form-control" id="4i" required>
+                    <span class="valid-feedback">Good!</span>
+                    <span class="invalid-feedback">Show your zip code.</span>
+                </div>
+                <div>
+                    <label for="4j" class="form-label">Business description</label>
+                    <input type="email" class="form-control" id="4j" required>
+                    <span class="valid-feedback">Good!</span>
+                    <span class="invalid-feedback">Describe your business.</span>
+                </div>
+                <div>
+                    <label for="4k" class="form-label">I agree with <a href="#">our terms and conditions.</a></label>
+                    <input type="checkbox" class="form-control" id="4k" required style="width: 30px; height: 30px;">
+                    <span class="valid-feedback">LOL you had no other choice</span>
+                    <span class="invalid-feedback">You have to agree with our terms and conditions.</span>
+                </div>
+                <div>
+                    <button class="btn btn-info" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../bootstrap.bundle.min.js"></script>
+    <script>
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+</html>
